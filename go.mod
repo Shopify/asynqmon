@@ -3,8 +3,8 @@ module github.com/Shopify/asynqmon
 go 1.20
 
 require (
-	github.com/Shopify/asynq v0.25.0
-	github.com/Shopify/asynq/x v0.0.0-20230403210535-4a23e155f2d9
+	github.com/Shopify/asynq v0.25.1
+	github.com/Shopify/asynq/x v0.0.0-20230405185618-58f3ab23b44c
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/google/go-cmp v0.5.9
 	github.com/gorilla/mux v1.8.0
