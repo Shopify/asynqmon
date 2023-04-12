@@ -87,13 +87,35 @@ func TestMakeRedisConnOpt(t *testing.T) {
 			},
 		},
 		{
-			desc: "With redis URL",
+			desc: "With redis URL including db number in path",
 			cfg: &Config{
 				RedisURL: "redis://:bar@localhost:6381/2",
 			},
 			want: asynq.RedisClientOpt{
 				Addr:     "localhost:6381",
 				DB:       2,
+				Password: "bar",
+			},
+		},
+		{
+			desc: "With redis URL excluding db number in path",
+			cfg: &Config{
+				RedisURL: "redis://:bar@localhost:6381",
+			},
+			want: asynq.RedisClientOpt{
+				Addr:     "localhost:6381",
+				DB:       0,
+				Password: "bar",
+			},
+		},
+		{
+			desc: "With redis URL that has trailing slash",
+			cfg: &Config{
+				RedisURL: "redis://:bar@localhost:6381/",
+			},
+			want: asynq.RedisClientOpt{
+				Addr:     "localhost:6381",
+				DB:       0,
 				Password: "bar",
 			},
 		},
@@ -106,7 +128,7 @@ func TestMakeRedisConnOpt(t *testing.T) {
 				MasterName: "mymaster",
 				SentinelAddrs: []string{
 					"localhost:5000", "localhost:5001", "localhost:5002"},
-				Password: "secretpassword", // FIXME: Shouldn't this be SentinelPassword instead?
+				SentinelPassword: "secretpassword",
 			},
 		},
 		{

@@ -33,8 +33,8 @@ cloud.google.com/go/storage v1.10.0/go.mod h1:FLPqc6j+Ki4BU591ie1oL6qBQGu2Bl/tZ9
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
-github.com/Shopify/asynq v0.25.1 h1:pzxTyOJfjqS0wnW/pRp8uuKdiKguPm8457ACfOOdqGw=
-github.com/Shopify/asynq v0.25.1/go.mod h1:GYj+Gla0lA+tc4kNDUPB6tly7iXIwmfA/+9dO4YAo2U=
+github.com/Shopify/asynq v0.25.2 h1:d2rebIlbPFh+RChTmo1v5YYJDSJgHWVhRORJrtuECWA=
+github.com/Shopify/asynq v0.25.2/go.mod h1:GYj+Gla0lA+tc4kNDUPB6tly7iXIwmfA/+9dO4YAo2U=
 github.com/Shopify/asynq/x v0.0.0-20230405185618-58f3ab23b44c h1:jyCLwukyBOfVEarpPBeK+omvAMVNCAFmxq5ydYI9Qfk=
 github.com/Shopify/asynq/x v0.0.0-20230405185618-58f3ab23b44c/go.mod h1:+ii2BEXoFeELCrryTjaUnqq/VLatW/23w4gBwpA/Qow=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
